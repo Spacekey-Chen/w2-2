@@ -1,0 +1,468 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*顏色*/
+:root{
+    --primary-100:#f5fee7;
+    --primary-200:#e8fec5;
+    --primary-300:#c0fa73;
+    --primary-400:#57a203;
+    --primary-500:#477a11;
+    --neutral-0:#ffffff;
+    --neutral-100:#f8f9fa;
+    --neutral-200:#e9ecef;
+    --neutral-300:#dee2e6;
+    --neutral-400:#ced4da;
+    --neutral-500:#adb5bd;
+    --neutral-600:#6c757d;
+    --neutral-700:#495057;
+    --neutral-800:#343a40;
+    --neutral-900:#212529;
+     --danger-300:#d74f4f;   
+}
+
+/*標籤基本樣式設定*/
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans TC",sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--neutral-900);
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: var(--neutral-900);
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+}
+
+
+/*通用樣式*/
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.col-1 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12);
+}
+
+.col-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 3);
+}
+.col-4 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 6);
+}
+.col-7 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% / 12 * 12);
+}
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center ;
+}
+
+.h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h4 {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h5 {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.h6 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-primary-400 {
+    color: var(--primary-400);
+}
+
+.text-danger {
+    color: var(--neutral-300);
+}
+
+.bg-primary-200 {
+    background-color:var(--primary-200);
+}
+
+.bg-neutral-100 {
+    background: var(--neutral-100);
+}
+
+.p-12 {
+    padding: 12px;
+}
+
+.py-8 {
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.me-8 {
+    margin-right: 8px;
+}
+.me-12{
+    margin-right: 12px;
+}
+
+.me-24 {
+    margin-right: 24px;
+}
+.me-48 {
+    margin-right: 48px;
+}
+
+.me-40 {
+    margin-right: 40px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+/* 元件 */
+.breadcrumb-item + .breadcrumb-item::before {
+    content: '/';
+    padding: 0 12px;
+    color: var(--neutral-300);
+    font-weight: 700;
+}
+.breadcrumb-item {
+    display: flex;
+    font-weight: 500;
+    color: var(--neutral-800);
+}
+
+.breadcrumb-link {
+    color: var(--neutral-600);
+}
+
+.myb-4 {
+  margin-bottom: 4px;
+}
+
+.my-32 {
+    margin: 32px 0;
+}
+
+.mb-12 {
+    margin-bottom: 12px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+
+.py-64{
+    padding: 64px 0;
+}
+
+.py-48{
+    padding: 48px 0;
+}
+
+.pb-64{
+    padding-bottom: 64px;
+}
+
+.pb-24 {
+    padding-bottom: 24px;
+}
+.py-32{
+    padding: 32px 0;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-64{
+    margin-bottom: 64px;
+}
+
+
+.btn{
+    border-radius: 4px;
+    padding: 12px 24px; 
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-dark{
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
+.footer {
+    background-color: var(--neutral-100);    
+}
+
+.footer-box-1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    height: 48px;
+}
+.logo {
+  font-family: "Mina", sans-serif;
+  color: #212529;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: 0.704px;
+  padding: 8px 12px;
+  position: relative;
+  display: inline-block;
+  transform-origin: top left;
+}
+
+.logo .brand-text {
+  position: relative;
+  z-index: 1;
+}
+
+.logo .deco-dot {
+  position: absolute;
+  top: 11px;
+  right: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-300);
+  z-index: 0;
+}
+
+.mla{
+    margin-left: auto;
+}
+.footer-box-2 {
+  width: 100%;
+  max-width: 1296px;
+  font-size: 14px;
+  color: var(--neutral-600);
+  border-top: 1px solid var(--neutral-300);
+}
+
+.ta {
+    text-align: center;
+}
+
+.m0a {
+      margin: 0 auto;
+}
+
+.footer-link {
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.footer-box-3 {
+    display: flex;
+}
+
+.me-8 {
+    margin: 0 8px;
+}
+
+.gap-8{
+    gap: 8px;
+}
+
+.btn-light{
+    bottom: 1px solid var(--neutral-900);
+}
+
+.pt-48{
+    padding-top: 48px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
