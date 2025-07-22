@@ -57,8 +57,5 @@
 
 .product-info-item {
     color: var(--neutral-600);
-}
-
-.product-info-item {
     border-bottom: 1px solid var(--neutral-300);
 }
