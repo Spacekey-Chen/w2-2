@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+
+.product-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /*商品描述*/
 .del-price {
     font-size: 14px;
